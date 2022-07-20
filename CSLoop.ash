@@ -24,6 +24,6 @@ cli_execute("call nightcap");
 cli_execute("garbo ascend");
 
 log_both_and_add("EOCSL");
-compare_both("SOCS","EOCS", false);
-compare_both("SOCS","EOCSL");
+
+
 

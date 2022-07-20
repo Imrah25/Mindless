@@ -38,7 +38,7 @@ print("Grabbing buffers from the Clan Stash", "red");
      } 
 
 cli_execute("ccs snojo");
-cli_execute("familiar hobo monkey");
+cli_execute("familiar urchin urchin");
 cli_execute("outfit fam exp");
 cli_execute("cast 1 curiosity of br'er tarrypin");
 cli_execute("acquire 5 pulled blue taffy");

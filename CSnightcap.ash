@@ -38,3 +38,5 @@ cli_execute("wait 1");
 
 cli_execute("raffle 11");
 
+cli_execute("use 3 meteorite-ade");
+

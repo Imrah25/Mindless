@@ -25,8 +25,8 @@
 	// get astral six-pack
 	visit_url("afterlife.php?action=buydeli&whichitem=5046");
 	
-	// get astral trousers, sweater 5040
-	visit_url("afterlife.php?action=buyarmory&whichitem=5035");
+	// get astral mask, sweater 5040
+	visit_url("afterlife.php?action=buyarmory&whichitem=5039");
 	
 	// Normal Community Service, Male, Wallaby, Pastamancer
 	visit_url("afterlife.php?action=ascend&confirmascend=1&whichsign=2&gender=1&whichclass=3&whichpath=25&asctype=2&nopetok=1&noskillsok=1&pwd", true);
@@ -40,9 +40,9 @@ cli_execute("set hpAutoRecoveryTarget = 1");
 
 //Pulls
 cli_execute("pull 1 pixel star");
-cli_execute("pull 1 silver face paint");
+cli_execute("pull 1 tobiko marble soda");
 cli_execute("pull 1 staff of the roaring hearth");
-cli_execute("pull 1 wasabi marble soda");
+cli_execute("pull 1 great wolf's beastly trousers");
 cli_execute("pull 1 stick-knife of loathing");
 
 
@@ -80,8 +80,11 @@ cli_execute("autosell mantle");
 cli_execute("buy 1 yellow rocket");	
 
 // buff for snojo fights and restore MP
+
 cli_execute("wait 1");
 cli_execute("rest chateau");
+cli_execute("use 1 bird-a-day calendar");
+cli_execute("cast seek out a bird");
 cli_execute("cast 1 carol of the thrills");
 cli_execute("cast 1 feel excitement");
 cli_execute("cast 1 blood bubble");
@@ -97,8 +100,8 @@ cli_execute("ccs snojo");
 cli_execute("rest free");
 cli_execute("cast eye and a twist");
 cli_execute("acquire 1 toy accordion");
-cli_execute("cast 1 ode to booze");
-drink(1,$item[eye and a twist]);
+//cli_execute("cast 1 ode to booze");
+//drink(1,$item[eye and a twist]);
 cli_execute("rest free");
 
 
@@ -126,14 +129,14 @@ cli_execute("cast 1 phat loot");
 cli_execute("cast 1 leash of linguini");
 cli_execute("cast 1 singer's faithful ocelot");
 
-// DMT
-adv1($location[The Deep Machine Tunnels],-1,"");
 
 cli_execute("familiar grey goose");
 cli_execute("rest free");
 
-adv1($location[noob cave],-1,"");
+visit_url("adventure.php?snarfblat=443");
+adv1($location[Pirates of the Garbage Barges],-1,"");
 cli_execute("camp dnapotion");
+
 
 if (get_property("dnaSyringe") != "fish") {				
 				cli_execute("reminisce cocktail shrimp");

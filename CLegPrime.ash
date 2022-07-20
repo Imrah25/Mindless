@@ -24,7 +24,9 @@
 cli_execute("wait 5"); 
 cli_execute("use 1 boxing daypass");
 cli_execute("boxingdaycare (1, 1, 0, 1)");
+
 cli_execute("guild.php?place=challenge");
+visit_url("peevpee.php?confirm=on&action=smashstone");
 
 cli_execute("acquire 1 vial of humanoid growth hormone");  
 cli_execute("chew 1 vial of humanoid growth hormone");  
